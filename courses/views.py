@@ -1,20 +1,21 @@
 # Create your views here.
 
-from django.shortcuts import render
+#from django.shortcuts import render, get_object_or_404
+#from django.http import HttpResponseRedirect, HttpResponse
+#from django.core.urlresolvers import reverse
+#from courses.models import Course, Event
 
-from courses.models import Course
-
-def index(request):
-    latest_courses_list = Course.objects.order_by('start_date')[:5]
-    context = {'latest_courses_list': latest_courses_list}
-    return render(request, 'courses/index.html', context)
+#def index(request):
+#    latest_courses_list = Course.objects.all().order_by('-start_date')[:5]
+#    context = {'latest_courses_list': latest_courses_list}
+#    return render(request, 'courses/index.html', context)
 	
-def detail(request, courses_id):
-    course = get_object_or_404(Course, pk=course_id)
-    return render(request, 'courses/detail.html', {'course': course})
+#def detail(request, courses_id):
+#    course = get_object_or_404(Course, pk=courses_id)
+#    return render(request, 'courses/detail.html', {'course': course})
 
-def results(request, courses_id):
-    return HttpResponse("You're looking at the results of courses %s." % courses_id)
+#def results(request, courses_id):
+#    return HttpResponse("You're looking at the results of courses %s." % courses_id)
 
-def vote(request, courses_id):
-    return HttpResponse("You're voting on courses %s." % courses_id)
+#def vote(request, courses_id):
+#	return HttpResponse("You're voting on poll %s." % courses_id)

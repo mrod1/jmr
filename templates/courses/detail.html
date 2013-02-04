@@ -1,0 +1,18 @@
+<h1>{{ course.name }}</h1>
+
+<p>Description: {{ course.description }}</p>
+<p>Number of places: {{ course.num_places }}</p>
+<p>Price: {{course.price }}</p>
+<p>Start date: {{course.start_date }}</p>
+
+<p>Events schedule: </p>
+
+<ul>
+{% for event in course.event_set.all %}
+    <li>{{ event.event_name }}:</li>
+	<ul>
+	<li>Time: {{event.event_time}}</li>
+	<li>Duration: {{event.duration}} minutes</li>
+	</ul>
+{% endfor %}
+</ul>
