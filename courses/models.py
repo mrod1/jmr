@@ -1,22 +1,15 @@
 from django.db import models
 
 # Create your models here.
-
-from django.db import models
-
 class Course(models.Model):
-	name = models.CharField(max_length=100)
-	description = models.TextField()
-	num_places = models.PositiveIntegerField()
-	price = models.FloatField()
-	start_date = models.DateField()
-	def __unicode__(self):
-		return self.name
+    course_name = models.CharField(max_length=60)
+    course_description = models.TextField()
+    num_places = models.PositiveIntegerField()
+    price = models.DecimalField(decimal_places=2,max_digits=7)
 
 class Event(models.Model):
-	courses = models.ForeignKey(Course)
-	event_name = models.CharField(max_length=100)
-	event_time = models.DateTimeField('time of event')
-	duration = models.PositiveIntegerField('duration in minutes')
-	def __unicode__(self):
-		return self.event_name
+    event_name = models.CharField(max_length=60)
+    event_day_num = models.PositiveIntegerField()
+    time_of_day = models.TimeField()
+    duration = models.TimeField()
+    

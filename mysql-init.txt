@@ -1,0 +1,2 @@
+UPDATE mysql.user SET Password=PASSWORD('TEAMJMR') WHERE User='root'; 
+FLUSH PRIVILEGES;

@@ -1,5 +1,9 @@
 from courses.models import Course, Event
+<<<<<<< HEAD
+
+=======
 #change#
+>>>>>>> c3a3b5e8eb28ce89259b3e5e3372b3f316d7a550
 Course.objects.all()
 
 from django.utils import timezone
