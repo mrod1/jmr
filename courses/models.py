@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# New models.
 class Course(models.Model):
     course_name = models.CharField(max_length=60)
     course_description = models.TextField()
