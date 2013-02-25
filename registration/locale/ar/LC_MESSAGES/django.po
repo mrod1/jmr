@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
@@ -81,6 +82,8 @@ msgstr "ملف التسجيل الشخصي"
 msgid "registration profiles"
 msgstr "ملفات التسجيل الشخصية"
 =======
+=======
+>>>>>>> 22d70e41d2cca81147f12831e217d881e74fd734
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
@@ -162,4 +165,7 @@ msgstr "ملف التسجيل الشخصي"
 #: models.py:195
 msgid "registration profiles"
 msgstr "ملفات التسجيل الشخصية"
+<<<<<<< HEAD
+>>>>>>> 22d70e41d2cca81147f12831e217d881e74fd734
+=======
 >>>>>>> 22d70e41d2cca81147f12831e217d881e74fd734
