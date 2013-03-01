@@ -1,18 +1,25 @@
 <h1>{{ course.name }}</h1>
 
-<p>Description: {{ course.description }}</p>
+<p>Description: {{ course.course_description }}</p>
 <p>Number of places: {{ course.num_places }}</p>
 <p>Price: {{course.price }}</p>
-<p>Start date: {{course.start_date }}</p>
 
-<p>Events schedule: </p>
-
-<ul>
+<table>
+<tr><title>Events</title></tr>
+<tr>
+	<th>Day</th>
+	<th>Event</th>
+	<th>Time</th>
+	<th>Duration (min)</th>
+	<th>Lecturer</th>
+</tr>
 {% for event in course.event_set.all %}
-    <li>{{ event.event_name }}:</li>
-	<ul>
-	<li>Time: {{event.event_time}}</li>
-	<li>Duration: {{event.duration}} minutes</li>
-	</ul>
+    <tr>
+    <td>{{ event.event_day_num }}</td>
+    <td>{{ event.name }}</td>
+	<td>{{event.time_of_day}}</td>
+	<td>{{event.duration}}</td>
+	<td>Tom Brady</td>
+	</tr>
 {% endfor %}
-</ul>
+</table>

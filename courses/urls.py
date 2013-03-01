@@ -7,7 +7,7 @@ urlpatterns = patterns('',
 #    url(r'^(?P<courses_id>\d+)/$', views.detail, name='detail'),
     url(r'^$',
         ListView.as_view(
-            queryset=Course.objects.order_by('-course_name')[:5],
+            queryset=Course.objects.order_by('-name')[:5],
             context_object_name='latest_courses_list',
             template_name='courses/index.html'),
         name='index'),

@@ -43,7 +43,7 @@ USE_L10N = True
 # If you set this to False, Django will not use timezone-aware datetimes.
 #USE_TZ = True
 
-USE_TZ = True
+USE_TZ = False
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
 MEDIA_ROOT = ''
@@ -117,7 +117,6 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
@@ -128,13 +127,12 @@ INSTALLED_APPS = (
 
 ACCOUNT_ACTIVATION_DAYS=7
 
+EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 25
-EMAIL_HOST_USER = 'jkleczar@gmail.com'
-EMAIL_HOST_PASSWORD = '1N5p1r3d8uqbiw'
-EMAIL_USE_TLS = False
-DEFAULT_FROM_EMAIL = 'jkleczar@gmail.com'
-
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'uccsc.contact@gmail.com'
+EMAIL_HOST_PASSWORD = 'teamjmr123'
+DEFAULT_FROM_EMAIL = 'uccsc.contact@gmail.com'
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
