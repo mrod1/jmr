@@ -52,7 +52,7 @@ STATICFILES_DIRS = (
 ADMIN_MEDIA_PREFIX = '/media/'  # remove for Django 1.4 as deprecated
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '13c12glirm)8&%7su%&b3u4itp#0$ukc*sw+pnbcyoie(=qu)h'
+SECRET_KEY = '#q(2s1w-0_$eul1=wo@k%5yy7_2trrl6zg2ps$w*1--1ix9d3e'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (

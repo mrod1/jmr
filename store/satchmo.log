@@ -1,10 +1,27 @@
-Mon, 04 Mar 2013 11:07:28 root         INFO     Satchmo Started
-Mon, 04 Mar 2013 11:07:28 root         INFO     Satchmo Started
-Mon, 04 Mar 2013 11:07:29 py.warnings  WARNING  C:\Python27\lib\site-packages\django\utils\hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
+Mon, 04 Mar 2013 11:32:03 root         INFO     Satchmo Started
+Mon, 04 Mar 2013 11:32:03 root         INFO     Satchmo Started
+Mon, 04 Mar 2013 11:32:03 py.warnings  WARNING  C:\Python27\lib\site-packages\django\utils\hashcompat.py:9: DeprecationWarning: django.utils.hashcompat is deprecated; use hashlib instead
   DeprecationWarning)
 
-Mon, 04 Mar 2013 11:07:29 keyedcache   WARNING  No KEY_PREFIX found in settings.CACHES['default'], using SITE_ID.  Please update your settings to add a CACHES
-Mon, 04 Mar 2013 11:07:29 keyedcache   WARNING  No TIMEOUT found in settings.CACHES['default'], so we used 300. Please update your settings to add a TIMEOUT and avoid this warning.
-Mon, 04 Mar 2013 11:07:29 configuration DEBUG    Could not load default shipping module configuration: fedex_web_services
-Mon, 04 Mar 2013 11:07:29 shop.listeners DEBUG    Added default shop listeners
-Mon, 04 Mar 2013 11:07:29 satchmo_toolbar DEBUG    Satchmo toolbar ready
+Mon, 04 Mar 2013 11:32:03 keyedcache   WARNING  No KEY_PREFIX found in settings.CACHES['default'], using SITE_ID.  Please update your settings to add a CACHES
+Mon, 04 Mar 2013 11:32:03 keyedcache   WARNING  No TIMEOUT found in settings.CACHES['default'], so we used 300. Please update your settings to add a TIMEOUT and avoid this warning.
+Mon, 04 Mar 2013 11:32:04 configuration DEBUG    Could not load default shipping module configuration: fedex_web_services
+Mon, 04 Mar 2013 11:32:04 shop.listeners DEBUG    Added default shop listeners
+Mon, 04 Mar 2013 11:32:04 satchmo_toolbar DEBUG    Satchmo toolbar ready
+Mon, 04 Mar 2013 11:32:04 iterchoices  DEBUG    Management command: runserver
+Mon, 04 Mar 2013 11:32:04 iterchoices  DEBUG    Called model choices initialization function <shipping_choices>
+Mon, 04 Mar 2013 11:32:04 django.db.backends DEBUG    (0.006) SELECT "django_site"."id", "django_site"."domain", "django_site"."name" FROM "django_site" WHERE "django_site"."id" = 1 ; args=(1,)
+Mon, 04 Mar 2013 11:32:04 django.db.backends DEBUG    (0.000) SELECT "livesettings_setting"."id", "livesettings_setting"."site_id", "livesettings_setting"."group", "livesettings_setting"."key", "livesettings_setting"."value" FROM "livesettings_setting" WHERE ("livesettings_setting"."site_id" = 1  AND "livesettings_setting"."site_id" = 1  AND "livesettings_setting"."group" = SHIPPING  AND "livesettings_setting"."key" = MODULES ); args=(1, 1, 'SHIPPING', 'MODULES')
+Mon, 04 Mar 2013 11:32:04 django.db.backends DEBUG    (0.000) SELECT "livesettings_longsetting"."id", "livesettings_longsetting"."site_id", "livesettings_longsetting"."group", "livesettings_longsetting"."key", "livesettings_longsetting"."value" FROM "livesettings_longsetting" WHERE ("livesettings_longsetting"."site_id" = 1  AND "livesettings_longsetting"."site_id" = 1  AND "livesettings_longsetting"."group" = SHIPPING  AND "livesettings_longsetting"."key" = MODULES ); args=(1, 1, 'SHIPPING', 'MODULES')
+Mon, 04 Mar 2013 11:32:04 iterchoices  DEBUG    Management command: runserver
+Mon, 04 Mar 2013 11:32:04 iterchoices  DEBUG    Called model choices initialization function <labelled_gateway_choices>
+Mon, 04 Mar 2013 11:32:04 django.db.backends DEBUG    (0.000) SELECT "livesettings_setting"."id", "livesettings_setting"."site_id", "livesettings_setting"."group", "livesettings_setting"."key", "livesettings_setting"."value" FROM "livesettings_setting" WHERE ("livesettings_setting"."site_id" = 1  AND "livesettings_setting"."site_id" = 1  AND "livesettings_setting"."group" = PAYMENT_DUMMY  AND "livesettings_setting"."key" = LABEL ); args=(1, 1, 'PAYMENT_DUMMY', 'LABEL')
+Mon, 04 Mar 2013 11:32:04 django.db.backends DEBUG    (0.001) SELECT "livesettings_longsetting"."id", "livesettings_longsetting"."site_id", "livesettings_longsetting"."group", "livesettings_longsetting"."key", "livesettings_longsetting"."value" FROM "livesettings_longsetting" WHERE ("livesettings_longsetting"."site_id" = 1  AND "livesettings_longsetting"."site_id" = 1  AND "livesettings_longsetting"."group" = PAYMENT_DUMMY  AND "livesettings_longsetting"."key" = LABEL ); args=(1, 1, 'PAYMENT_DUMMY', 'LABEL')
+Mon, 04 Mar 2013 11:32:04 django.db.backends DEBUG    (0.000) SELECT "livesettings_setting"."id", "livesettings_setting"."site_id", "livesettings_setting"."group", "livesettings_setting"."key", "livesettings_setting"."value" FROM "livesettings_setting" WHERE ("livesettings_setting"."site_id" = 1  AND "livesettings_setting"."site_id" = 1  AND "livesettings_setting"."group" = PAYMENT_DUMMY  AND "livesettings_setting"."key" = KEY ); args=(1, 1, 'PAYMENT_DUMMY', 'KEY')
+Mon, 04 Mar 2013 11:32:04 django.db.backends DEBUG    (0.001) SELECT "livesettings_longsetting"."id", "livesettings_longsetting"."site_id", "livesettings_longsetting"."group", "livesettings_longsetting"."key", "livesettings_longsetting"."value" FROM "livesettings_longsetting" WHERE ("livesettings_longsetting"."site_id" = 1  AND "livesettings_longsetting"."site_id" = 1  AND "livesettings_longsetting"."group" = PAYMENT_DUMMY  AND "livesettings_longsetting"."key" = KEY ); args=(1, 1, 'PAYMENT_DUMMY', 'KEY')
+Mon, 04 Mar 2013 11:32:04 iterchoices  DEBUG    Management command: runserver
+Mon, 04 Mar 2013 11:32:04 iterchoices  DEBUG    Called model choices initialization function <labelled_gateway_choices>
+Mon, 04 Mar 2013 11:32:04 iterchoices  DEBUG    Management command: runserver
+Mon, 04 Mar 2013 11:32:04 iterchoices  DEBUG    Called model choices initialization function <credit_choices>
+Mon, 04 Mar 2013 11:32:04 django.db.backends DEBUG    (0.001) SELECT "livesettings_setting"."id", "livesettings_setting"."site_id", "livesettings_setting"."group", "livesettings_setting"."key", "livesettings_setting"."value" FROM "livesettings_setting" WHERE ("livesettings_setting"."site_id" = 1  AND "livesettings_setting"."site_id" = 1  AND "livesettings_setting"."group" = PAYMENT_DUMMY  AND "livesettings_setting"."key" = CREDITCHOICES ); args=(1, 1, 'PAYMENT_DUMMY', 'CREDITCHOICES')
+Mon, 04 Mar 2013 11:32:04 django.db.backends DEBUG    (0.000) SELECT "livesettings_longsetting"."id", "livesettings_longsetting"."site_id", "livesettings_longsetting"."group", "livesettings_longsetting"."key", "livesettings_longsetting"."value" FROM "livesettings_longsetting" WHERE ("livesettings_longsetting"."site_id" = 1  AND "livesettings_longsetting"."site_id" = 1  AND "livesettings_longsetting"."group" = PAYMENT_DUMMY  AND "livesettings_longsetting"."key" = CREDITCHOICES ); args=(1, 1, 'PAYMENT_DUMMY', 'CREDITCHOICES')

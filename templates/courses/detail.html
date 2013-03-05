@@ -19,7 +19,7 @@
     <td>{{ event.name }}</td>
 	<td>{{event.time_of_day}}</td>
 	<td>{{event.duration}}</td>
-	<td>Tom Brady</td>
+	<td>{{event.lecturer.title}} {{event.lecturer.first_name}} {{event.lecturer.surname}}</td>
 	</tr>
 {% endfor %}
 </table>

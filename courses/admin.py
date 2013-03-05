@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, url
 from django.views.generic import DetailView, ListView
-from courses.models import Course, Event
+from courses.models import Course, Event, Lecturer
+from django.contrib import admin
 
 urlpatterns = patterns('',
 #   url(r'^$', views.index, name='index'),
@@ -17,12 +18,15 @@ urlpatterns = patterns('',
             template_name='courses/detail.html'),
         name='detail'),
 )
-from django.contrib import admin
 
 class EventInline(admin.StackedInline):
     model = Event
     extra = 1
-    
+class LecturerAdmin(admin.ModelAdmin):
+    fieldsets = [
+        ('Lecturer', {'fields': ['title','first_name', 'surname']}),
+        ('Contact Email (optional)', {'fields': ['email']})
+    ]
 class CourseAdmin(admin.ModelAdmin):
     fieldsets = [
         ("Course",               {'fields': ['name']}), 
@@ -33,3 +37,4 @@ class CourseAdmin(admin.ModelAdmin):
     inlines = [EventInline]
 
 admin.site.register(Course, CourseAdmin)
+admin.site.register(Lecturer, LecturerAdmin)

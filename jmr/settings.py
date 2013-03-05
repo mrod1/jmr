@@ -123,6 +123,7 @@ INSTALLED_APPS = (
 	'courses',
 	'registration',
     'store',
+    'schedules'
 )
 
 ACCOUNT_ACTIVATION_DAYS=7

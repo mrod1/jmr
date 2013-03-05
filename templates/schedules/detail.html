@@ -1,0 +1,22 @@
+<h1>{{ courseschedule.course.name }}</h1>
+
+<table>
+<tr><title>Events</title></tr>
+<tr>
+	<th>Date</th>
+	<th>Event</th>
+	<th>Time</th>
+	<th>Duration</th>
+	<th>Lecturer</th>
+</tr>
+
+{% for eventschedule in courseschedule.eventschedule_set.all %}
+    <tr>
+    <td>{{ eventschedule.start_date }}</td>
+    <td>{{ eventschedule.event.name }}</td>
+	<td>{{eventschedule.start_time}}</td>
+	<td>{{eventschedule.event.duration}} minutes</td>
+	<td>{{eventschedule.event.lecturer.title}} {{eventschedule.event.lecturer.first_name}} {{eventschedule.event.lecturer.surname}}</td>
+	</tr>
+{% endfor %}
+</table>

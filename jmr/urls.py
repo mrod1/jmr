@@ -16,5 +16,6 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
     url(r'^courses/', include('courses.urls', namespace="courses")),
-	url(r'^accounts/', include('registration.backends.default.urls')),
+    url(r'^accounts/', include('registration.backends.default.urls')),
+    url(r'^schedules/', include('schedules.urls', namespace="schedules")),
 )
