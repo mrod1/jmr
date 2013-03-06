@@ -13,31 +13,14 @@
 
       <!-- Example row of columns -->
       <div class="row">
-        <div class="span8">
-          <h2>Welcome to UCC Summer Courses!</h2>
+        <div class="span12">
+          <h2>Frequently Asked Questions</h2>
           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempor gravida lorem id rutrum. Vivamus porttitor purus nec velit consequat suscipit. Nullam aliquam molestie tellus, a molestie dolor fermentum id. In velit erat, mattis sed pretium vel, fringilla condimentum nisl. Donec nec euismod augue. Nulla viverra felis in velit faucibus eu varius nisl porta. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 		  </p>
 
 <p>Morbi auctor consequat eros, eu ultricies quam interdum ut. Vivamus ac erat erat. Maecenas quis libero id dui vehicula faucibus. Integer pharetra justo nec elit malesuada blandit quis sit amet urna. Cras fringilla scelerisque pulvinar. Nunc at diam a leo congue dapibus. Nam ullamcorper ornare ligula nec luctus. Vestibulum eget leo id ipsum pellentesque pellentesque vitae vel magna. Curabitur ut massa nec dui sagittis blandit. Cras rutrum sem a est condimentum sed fringilla lorem lacinia. Aliquam interdum, mauris id venenatis egestas, dolor leo vestibulum odio, nec fringilla turpis massa vitae augue. Donec id odio purus, vel pulvinar est. Quisque eleifend pharetra malesuada. Maecenas non magna diam, imperdiet posuere lorem. Cras lorem nisi, adipiscing eu ultrices non, rutrum sed enim. Cras rutrum tristique semper.  </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-		
-        <div class="span4">
-          <h3>Latest Courses</h3>
-		  
-{% if latest_courses_list %}
-    {% for course in latest_courses_list %}
-		<h4>{{ course.name }}</h4>
-		<p>{{ course.course_description }}</p>
-		<p><a class="btn" href="{% url 'courses:detail' course.id %}">View details &raquo;</a></p>
-		<br/>
-    {% endfor %}
-{% else %}
-    <p>No courses are available.</p>
-{% endif %}
-
-       </div>
 
       </div>
+	  </div>
 	  
 {% endblock %}

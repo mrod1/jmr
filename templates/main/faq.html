@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>UCC Summer Courses</title>
+    <title>UCC Summer Courses - FAQ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -46,10 +46,10 @@
           <a class="brand" href="#">UCC Summer Courses</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="{% url 'courses:index' %}">Home</a></li>
-              <li><a href="{% url 'courses:courselist' %}">Course Info</a></li>
-			  <li><a href="{% url 'courses:faq' %}">FAQ</a></li>
-              <li><a href="{% url 'courses:contact' %}">Contact</a></li>
+              <li><a href="../courses">Home</a></li>
+              <li><a href="courselist">Course Info</a></li>
+			  <li class="active"><a href="faq">FAQ</a></li>
+              <li><a href="contact">Contact</a></li>
             </ul>
 			<div class="links pull-right">
 				<a href="../accounts/register">Register</a>
@@ -61,7 +61,25 @@
       </div>
     </div>
 
-    {% block content %}Empty page{% endblock %}
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <!--<h1 style="background-color:rgba(0, 0, 0, 0.7)">UCC Summer Courses</h1>-->
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span12">
+          <h2>Frequently Asked Questions</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempor gravida lorem id rutrum. Vivamus porttitor purus nec velit consequat suscipit. Nullam aliquam molestie tellus, a molestie dolor fermentum id. In velit erat, mattis sed pretium vel, fringilla condimentum nisl. Donec nec euismod augue. Nulla viverra felis in velit faucibus eu varius nisl porta. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+		  </p>
+
+<p>Morbi auctor consequat eros, eu ultricies quam interdum ut. Vivamus ac erat erat. Maecenas quis libero id dui vehicula faucibus. Integer pharetra justo nec elit malesuada blandit quis sit amet urna. Cras fringilla scelerisque pulvinar. Nunc at diam a leo congue dapibus. Nam ullamcorper ornare ligula nec luctus. Vestibulum eget leo id ipsum pellentesque pellentesque vitae vel magna. Curabitur ut massa nec dui sagittis blandit. Cras rutrum sem a est condimentum sed fringilla lorem lacinia. Aliquam interdum, mauris id venenatis egestas, dolor leo vestibulum odio, nec fringilla turpis massa vitae augue. Donec id odio purus, vel pulvinar est. Quisque eleifend pharetra malesuada. Maecenas non magna diam, imperdiet posuere lorem. Cras lorem nisi, adipiscing eu ultrices non, rutrum sed enim. Cras rutrum tristique semper.  </p>
+
+      </div>
+	  </div>
+	  
 
       <hr>
 

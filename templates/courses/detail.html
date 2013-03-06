@@ -1,10 +1,31 @@
+{% extends "base.html" %}
+
+{% load url from future %}
+
+{% block content %}
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+      </div>
+
+	<div class="row">
+      <!-- Example row of columns -->
+		
+        <div class="span11">
 <h1>{{ course.name }}</h1>
 
-<p>Description: {{ course.course_description }}</p>
-<p>Number of places: {{ course.num_places }}</p>
-<p>Price: {{course.price }}</p>
+<img src="{{ STATIC_URL }}assets/img/image.png" alt="Picture" />
 
-<table>
+<p><span>00/00/0000 - 00/00/0000</span></p>
+<p><span>Description:</span> {{ course.course_description }}</p>
+<p><span>Number of places:</span> {{ course.num_places }}</p>
+<p><span>Price:</span> {{course.price }}</p>
+<br/>
+<h3>Course Schedule</h3>
+
+<table class="table">
 <tr><title>Events</title></tr>
 <tr>
 	<th>Day</th>
@@ -19,7 +40,11 @@
     <td>{{ event.name }}</td>
 	<td>{{event.time_of_day}}</td>
 	<td>{{event.duration}}</td>
-	<td>{{event.lecturer.title}} {{event.lecturer.first_name}} {{event.lecturer.surname}}</td>
+	<td>Tom Brady</td>
 	</tr>
 {% endfor %}
 </table>
+       </div>
+      </div>
+
+{% endblock %}

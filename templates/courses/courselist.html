@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% load url from future %}
+
+{% block content %}
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+
+      </div>
+	  
+	  <div class="row">
+
+      <!-- Example row of columns -->
+		
+{% if latest_courses_list %}
+    {% for course in latest_courses_list %}
+	<div>
+	<div class="span8">
+		<h3>{{ course.name }}</h3>
+		<p>{{ course.course_description }}</p>
+		<p><a class="btn" href="{% url 'courses:detail' course.id %}">View details &raquo;</a></p>
+	</div>
+	
+	<div class="span4">
+		<img src="{{ STATIC_URL }}assets/img/image.png" alt="Picture" />
+	</div>
+	</div>
+    {% endfor %}
+{% else %}
+    <p>No courses are available.</p>
+{% endif %}
+       </div>
+
+{% endblock %}

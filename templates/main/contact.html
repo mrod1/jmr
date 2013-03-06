@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>UCC Summer Courses</title>
+    <title>UCC Summer Courses - FAQ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -46,10 +46,10 @@
           <a class="brand" href="#">UCC Summer Courses</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="{% url 'courses:index' %}">Home</a></li>
-              <li><a href="{% url 'courses:courselist' %}">Course Info</a></li>
-			  <li><a href="{% url 'courses:faq' %}">FAQ</a></li>
-              <li><a href="{% url 'courses:contact' %}">Contact</a></li>
+              <li><a href="../courses">Home</a></li>
+              <li><a href="courselist">Course Info</a></li>
+			  <li><a href="faq">FAQ</a></li>
+              <li class="active"><a href="contact">Contact</a></li>
             </ul>
 			<div class="links pull-right">
 				<a href="../accounts/register">Register</a>
@@ -61,7 +61,76 @@
       </div>
     </div>
 
-    {% block content %}Empty page{% endblock %}
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <!--<h1 style="background-color:rgba(0, 0, 0, 0.7)">UCC Summer Courses</h1>-->
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span6">
+          <h2>Contact Details</h2>
+		  
+		  <table class="table">
+			<tr>
+				<th valign="top" rowspan="4">Address:</td>
+				<td>UCC Summer Courses</td>
+			</tr>
+			<tr>
+				<td>Address Line 1</td>
+			</tr>
+			<tr>
+				<td>Address Line 2</td>
+			</tr>
+			<tr>
+				<td>Address Line 3</td>
+			</tr>
+			<tr>
+				<th>E-Mail:</td>
+				<td>UCCSC@example.com</td>
+			</tr>
+			<tr>
+				<th>Phone:</td>
+				<td>021-xxx-xxxx</td>
+			</tr>
+		  </table>
+		  
+        </div>
+	  
+	    <div class="span6">
+		  
+		  <form class="message" action="" method="get">
+		    <h2>Send us a message!</h2>
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="fname" size="12" maxlength="30" />
+            </div>
+			<div>
+              <label for="email">E-mail:</label>
+              <input type="text" name="email" id="email" size="12" maxlength="30" />
+            </div>
+			<div>
+              <label for="title">Message title:</label>
+              <input type="text" name="title" id="title" size="12" maxlength="50" />
+            </div>
+			<div>
+              <label for="title">Message:</label>
+              <textarea name="message"cols="20" rows="7"></textarea>
+            </div>
+            <div id="button_contact">
+              <input class="btn btn-small btn-primary" type="submit" value="Send!" />
+              <input class="btn btn-small btn-primary" type="reset" />
+            </div>
+          </form>
+
+		 
+		  
+      </div>
+	  
+	  </div>
+	  
 
       <hr>
 
