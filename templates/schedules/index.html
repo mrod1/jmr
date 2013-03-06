@@ -3,7 +3,7 @@
 {% if latest_scheduled_courses_list %}
     <ul>
     {% for course_schedule in latest_scheduled_courses_list %}
-		<li><a href="{% url 'schedules:detail' course_schedule.course.id %}">{{ course_schedule.course.name }}</a>
+		<li><a href="{% url 'schedules:detail' course_schedule.id %}">{{ course_schedule.course.name }}</a>
 		-
 		Starts on: <b>{{ course_schedule.start_date}}</b> at <b>{{course_schedule.start_time}}</b></li>
     {% endfor %}

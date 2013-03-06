@@ -7,7 +7,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'jmr.views.home', name='home'),
+    url(r'^$', 'jmr.views.home', name='home'),
     # url(r'^jmr/', include('jmr.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
