@@ -12,7 +12,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'ucc_summer',                      # Or path to database file if using sqlite3.
+        'NAME': 'UCC_SUMMER',                      # Or path to database file if using sqlite3.
         'USER': 'root',                      # Not used with sqlite3.
         'PASSWORD': 'teamjmr',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -68,6 +68,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+	'/uccsc/static',
 )
 
 # List of finder classes that know how to find static files in
@@ -107,7 +108,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-	"/jmr/templates"
+	"/uccsc/templates"
 )
 
 INSTALLED_APPS = (
@@ -123,7 +124,8 @@ INSTALLED_APPS = (
 	'courses',
 	'registration',
     'store',
-    'schedules'
+    'schedules',
+	'bootstrap_toolkit',
 )
 
 ACCOUNT_ACTIVATION_DAYS=7
